@@ -1,3 +1,88 @@
-body {
-    background-color: darkblue;
+#begin {
+    background: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/colloseum-on-white-background-vector-22614639.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+#end { 
+    background: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/colloseum-on-white-background-vector-22614639.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+#chuckTitle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus', serif;
+}
+#startPage {
+    background-color: white;
+}
+footer {
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background: none;
+ }
+#norrisBtn {
+    background-color: white;
+    border-radius: 40%;
+    border: white;
+    max-height: 3rem;
+    /* object-fit: contain; */
+
+}
+#chuckFigure {
+    display: block;
+    margin-left: 2rem;
+}
+#start {
+    display: block;
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Marcellus', serif;
+}
+
+
+#jokeContainer{
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+
+#jokeBox {
+	background-color: #ffffff;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal-footer {
+	text-align: right
+}
+
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
 }
