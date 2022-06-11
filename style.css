@@ -17,16 +17,25 @@
     margin: 0;
     padding: 0;
     font-family: 'Marcellus', serif;
+    color: rgb(186, 8, 8);
+    text-shadow: 2px 2px goldenrod;
 }
+/* @media only screen and (max-width: 600px) {
+    #chuckTitle {
+        font-size: 25px;
+    }
+            
+} */
+
 #startPage {
-    background-color: white;
+    background-color: transparent;
 }
 footer {
     display:block;
     position:absolute;
     bottom:0;
     width:100%;
-    height:60px;   /* Height of the footer */
+    height:60px; 
     background: none;
  }
 #norrisBtn {
@@ -34,18 +43,60 @@ footer {
     border-radius: 40%;
     border: white;
     max-height: 3rem;
-    /* object-fit: contain; */
-
+    cursor: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/brucefist.jpeg), grabbing;
+    /* Animation Below */
+        position:fixed;
+        animation-name: chuckMoves;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+  
 }
+
+@keyframes chuckMoves {
+    0%   {left:0%; top:60%;}
+    25%  {left:100%; top:60%;}
+    50%  {left:100%; top:90%;}
+    75%  {left:0%; top:90%;}
+    100% {left:0%; top:65%;}
+  }
+
+@keyframes chuckWiggle {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    10% { transform: translate(0px, 0px) rotate(-.5deg); }
+    20% { transform: translate(5px, 0px) rotate(0deg); }
+    30% { transform: translate(-5px, 0px) rotate(0deg); }
+    40% { transform: translate(0px, 0px) rotate(-.5deg); }
+    50% { transform: translate(5px, 0px) rotate(0deg); }
+    60% { transform: translate(-5px, 0px) rotate(0deg); }
+    70% { transform: translate(0px, 0px) rotate(-.5deg); }
+    80% { transform: translate(10px, 0px) rotate(0deg); }
+    90% { transform: translate(-5px, 0px) rotate(0deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+    
+  }
 #chuckFigure {
     display: block;
-    margin-left: 2rem;
+    bottom: 0;
+    margin-left: 0rem;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-color: transparent;
+}
+#chuckFigure:hover {
+    animation: chuckWiggle 4s;
+    animation-iteration-count: infinite;
 }
 #start {
     display: block;
-    margin-left: 3.5rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
+    margin-top: 6rem;
     font-family: 'Marcellus', serif;
+    color: rgb(186, 8, 8);
+    border-color: goldenrod;
 }
 
 
@@ -59,30 +110,35 @@ footer {
 	z-index: 1;
 	overflow: auto;
 	display: none;
+    font-family: 'Marcellus', serif;
 }
 
 #jokeBox {
-	background-color: #ffffff;
-	height: 350px;
+	background-image: URL(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/moviearttwo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 200px;
 	width: 550px;
-	border-radius: 2px;
 	margin: 150px auto;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 10px goldenrod;
 	padding: 2%;
 	line-height: 120%;
+    font-family: 'Marcellus', serif;
+    color: rgb(249, 196, 62);
+    text-shadow: 2px 2px black;
+    border: 2px solid;
+    border-color: rgb(186, 8, 8);
 }
 
 #modal-footer {
-	text-align: right
+	text-align: right;
+    font-family: 'Marcellus', serif;
 }
-
-.modal-buttons {
-	padding: 14px 18px;
-	background-color: #677996;
-	border: none;
-	outline: none;
-	border-radius: 3px;
-	color: white;
-	font-family: 'Arial';
-	cursor: pointer;
+#close {
+    font-family: 'Marcellus', serif;
+}
+#chuck-start {
+    display: block;
+    position: fixed;
+    bottom: 0;
 }

@@ -12,24 +12,40 @@ function getJoke (event) {
 }
 getJoke()
 
+// create a variable for the modal -- im putting it equal to "jokeContainer", which is a div in the html that will contain all of the modal display info
 const modal = document.getElementById("jokeContainer");
+// create a function for opening the modal -- in this case i just want it to display in a block style (i was thinking about seeing how i could change that, maybe make it oval or something)
 const openModal = () => {
     modal.style.display = "block"
 }
-// create a function to close the modal
+// create a function to close the modal -- just set it to display none so it disappears off the screen
 const closeModal = () => {
+    window.location.reload()
     modal.style.display = "none"
 }
+
 const openButton = document.getElementById("norrisBtn");
-// add an event listener to that button that calls openModal
+
 openButton.addEventListener("click", openModal)
-// grab the close button
+
 const closeButton = document.getElementById("close");
-// add an event listener to it that calls closeModal
+
 closeButton.addEventListener("click", closeModal)
 
-// const startButton = document.getElementById('start').addEventListener('click', playGame)
+closeButton.onclick = (function outer() {
+    let counter = localStorage.getItem('count');
+    return function inner() {
+        counter++;
+        localStorage.setItem('count', counter)
+    };
+})();
 
-// function playGame() {
-//     location.href = '/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/indexTwo.html'
-// }
+function newEnemy () {
+    let clickCount = localStorage.getItem('count')
+    if (clickCount == 5){
+    location.href ='/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/indexThree.html'
+    }
+}
+
+newEnemy()
+// console.log(localStorage.getItem('count'))
