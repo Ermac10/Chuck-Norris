@@ -12,6 +12,13 @@
     -o-background-size: cover;
     background-size: cover;
   }
+#finishHim {
+  background: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/colosseuminteriorthree.png) no-repeat center center fixed; 
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
 #chuckTitle {
     text-align: center;
     margin: 0;
@@ -52,6 +59,44 @@ footer {
         animation-direction: alternate;
   
 }
+#norrisBtnTwo {
+    background-color: white;
+    border-radius: 20%;
+    border: white;
+    cursor: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/brucefistcolor.jpeg), grabbing;
+    display: inline-block;
+    bottom: 0;
+    margin-left: 8rem;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-color: transparent;
+    /* Animation Below */
+        position:fixed;
+        animation: chuckWiggle 4s;
+        animation-iteration-count: infinite;
+}
+
+#leeBtn {
+    background-color: white;
+    border-radius: 20%;
+    border: white;
+    cursor: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/norrisfistcolor.jpeg), grabbing;
+    display: inline-block;
+    bottom: 0;
+    margin-right: 8rem;
+    margin-left: 25rem;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-color: transparent;
+    /* Animation Below */
+        position:fixed;
+        animation: leeWiggle 3s;
+        animation-iteration-count: infinite;
+}
 
 @keyframes chuckMoves {
     0%   {left:0%; top:60%;}
@@ -73,7 +118,32 @@ footer {
     80% { transform: translate(10px, 0px) rotate(0deg); }
     90% { transform: translate(-5px, 0px) rotate(0deg); }
     100% { transform: translate(0px, 0px) rotate(0deg); }
-    
+  }
+  @keyframes chuckWiggle {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    10% { transform: translate(0px, 0px) rotate(-.5deg); }
+    20% { transform: translate(5px, 0px) rotate(0deg); }
+    30% { transform: translate(-5px, 0px) rotate(0deg); }
+    40% { transform: translate(0px, 0px) rotate(-.5deg); }
+    50% { transform: translate(5px, 0px) rotate(0deg); }
+    60% { transform: translate(-5px, 0px) rotate(0deg); }
+    70% { transform: translate(0px, 0px) rotate(-.5deg); }
+    80% { transform: translate(10px, 0px) rotate(0deg); }
+    90% { transform: translate(-5px, 0px) rotate(0deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+  }
+  @keyframes leeWiggle {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    10% { transform: translate(0px, 0px) rotate(-.5deg); }
+    20% { transform: translate(5px, 0px) rotate(0deg); }
+    30% { transform: translate(-5px, 0px) rotate(0deg); }
+    40% { transform: translate(0px, 0px) rotate(-.5deg); }
+    50% { transform: translate(5px, 0px) rotate(0deg); }
+    60% { transform: translate(-5px, 0px) rotate(0deg); }
+    70% { transform: translate(0px, 0px) rotate(-.5deg); }
+    80% { transform: translate(10px, 0px) rotate(0deg); }
+    90% { transform: translate(-5px, 0px) rotate(0deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
   }
 #chuckFigure {
     display: block;
@@ -138,6 +208,16 @@ footer {
     font-family: 'Marcellus', serif;
 }
 #chuck-start {
+    display: block;
+    position: fixed;
+    bottom: 0;
+}
+#pageThreeNorris {
+    display: block;
+    position: fixed;
+    bottom: 0;
+}
+#pageThreeLee {
     display: block;
     position: fixed;
     bottom: 0;
