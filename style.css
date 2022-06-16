@@ -27,6 +27,14 @@
     color: rgb(186, 8, 8);
     text-shadow: 2px 2px goldenrod;
 }
+#final-battle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus', serif;
+    color: rgb(186, 8, 8);
+    text-shadow: 2px 2px goldenrod;
+}
 /* @media only screen and (max-width: 600px) {
     #chuckTitle {
         font-size: 25px;
@@ -96,6 +104,7 @@ footer {
         position:fixed;
         animation: leeWiggle 3s;
         animation-iteration-count: infinite;
+
 }
 
 @keyframes chuckMoves {
@@ -131,6 +140,10 @@ footer {
     80% { transform: translate(10px, 0px) rotate(0deg); }
     90% { transform: translate(-5px, 0px) rotate(0deg); }
     100% { transform: translate(0px, 0px) rotate(0deg); }
+  }
+  @keyframes leeFlyIn {
+      0% { transform: translateX(200%);}
+      100%{transfrom: translatex(0%)}
   }
   @keyframes leeWiggle {
     0% { transform: translate(0px, 0px) rotate(0deg); }
@@ -182,6 +195,30 @@ footer {
 	display: none;
     font-family: 'Marcellus', serif;
 }
+#Container{
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+    font-family: 'Marcellus', serif;
+}
+/* #quoteContainer{
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+    font-family: 'Marcellus', serif;
+} */
 
 #jokeBox {
 	background-image: URL(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/moviearttwo.jpeg);
@@ -199,13 +236,45 @@ footer {
     border: 2px solid;
     border-color: rgb(186, 8, 8);
 }
-
+#Box {
+	background-image: URL(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/moviearttwo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 300px;
+	width: 550px;
+	margin: 150px auto;
+	box-shadow: 0 10px 10px goldenrod;
+	padding: 2%;
+	line-height: 120%;
+    font-family: 'Marcellus', serif;
+    color: rgb(249, 196, 62);
+    text-shadow: 2px 2px black;
+    border: 2px solid;
+    border-color: rgb(186, 8, 8);
+}
+#quoteBox {
+	background-image: URL(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/moviearttwo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 200px;
+	width: 550px;
+	margin: 150px auto;
+	box-shadow: 0 10px 10px goldenrod;
+	padding: 2%;
+	line-height: 120%;
+    font-family: 'Marcellus', serif;
+    color: rgb(249, 196, 62);
+    text-shadow: 2px 2px black;
+    border: 2px solid;
+    border-color: rgb(186, 8, 8);
+}
 #modal-footer {
 	text-align: right;
     font-family: 'Marcellus', serif;
 }
 #close {
     font-family: 'Marcellus', serif;
+    margin-top: 1rem;
 }
 #chuck-start {
     display: block;
@@ -221,4 +290,7 @@ footer {
     display: block;
     position: fixed;
     bottom: 0;
+}
+#norrisJoke {
+    padding-bottom: 1rem;
 }

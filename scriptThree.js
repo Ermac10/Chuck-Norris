@@ -1,10 +1,23 @@
+const leeArray = [
+  'Dragon seeks path. Hi-yah! Dragon whips his tail!',
+  'Let him know. If I ever see him here again... HE WON\'T LEAVE ALIVE!',
+  'These slums are just like ours',
+  'Its a waste. All of this. In Hong Kong, I would build on it. Make money.',
+  'Knowing is not enough, we must apply. Willing is not enough, we must do.',
+  'The key to immortality is first living a life worth remembering',
+  'You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water can drip and it can crash. Become like water my friend.',
+  'Notice that the stiffest tree is most easily cracked. While the bamboo or willow survives by bending with the wind.',
+  'Don\’t fear failure. — Not failure, but low aim, is the crime. In great attempts, it is glorious even to fail.',
+  'A goal is not always meant to be reached, it often serves simply as something to aim at.',
+]
+
 function getJoke (event) {
   // event.preventDefault()
   let url = "https://api.chucknorris.io/jokes/random"
   fetch(url)
   .then(res => res.json())
   .then(res => {
-      document.querySelector('p').innerHTML = res.value
+      document.querySelector('#norrisJoke').innerHTML = res.value
   })
       .catch(err => {
         console.log("something went wrong...", err);
@@ -12,22 +25,51 @@ function getJoke (event) {
 }
 getJoke()
 
-// create a variable for the modal -- im putting it equal to "jokeContainer", which is a div in the html that will contain all of the modal display info
-const modal = document.getElementById("jokeContainer");
-// create a function for opening the modal -- in this case i just want it to display in a block style (i was thinking about seeing how i could change that, maybe make it oval or something)
+// function getQuote () {
+//   let randomQuote = leeArray[Math.floor(Math.random()*leeArray.length)];
+//   document.querySelector('#leeQuote').innerHTML = randomQuote
+// }
+// getQuote()
+
+//Norris Modal below
+const dialogueModal = document.getElementById("Container");
+
 const openModal = () => {
-  modal.style.display = "block"
-}
-// create a function to close the modal -- just set it to display none so it disappears off the screen
+  dialogueModal.style.display = "block"
+    let randomQuote = leeArray[Math.floor(Math.random()*leeArray.length)];
+    document.querySelector('#leeQuote').innerHTML = randomQuote
+ }
+
 const closeModal = () => {
   window.location.reload()
-  modal.style.display = "none"
+  dialogueModal.style.display = "none"
 }
 
-const openButton = document.getElementById("norrisBtnTwo");
+const dialogueOpenButton = document.getElementById("norrisBtnTwo");
 
-openButton.addEventListener("click", openModal)
+dialogueOpenButton.addEventListener("click", openModal)
 
-const closeButton = document.getElementById("close");
+const dialogueCloseButton = document.getElementById("close");
 
-closeButton.addEventListener("click", closeModal)
+dialogueCloseButton.addEventListener("click", closeModal)
+
+// lee Modal below
+// const leeModal = document.getElementById("quoteContainer");
+
+// const openLeeModal = () => {
+//   leeModal.style.display = "block";
+//   console.log('kjb')
+// }
+
+// const closeLeeModal = () => {
+//   window.location.reload();
+//   leeModal.style.display = "none";
+// }
+
+const leeOpenButton = document.getElementById("leeBtn");
+
+leeOpenButton.addEventListener("click", openModal);
+
+const leeCloseButton = document.getElementById("close");
+
+leeCloseButton.addEventListener("click", closeModal)
