@@ -43,6 +43,7 @@ closeButton.onclick = (function outer() {
 function newEnemy () {
     let clickCount = localStorage.getItem('count')
     if (clickCount == 2){
+    alert('Let him know. If I ever see him here again... he won\'t leave alive.')
     location.href ='indexThree.html'
     }
 }

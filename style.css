@@ -34,6 +34,9 @@
     font-family: 'Marcellus', serif;
     color: rgb(186, 8, 8);
     text-shadow: 2px 2px goldenrod;
+    animation-name: spin;
+    animation-duration: .3s;
+    animation-iteration-count: 2;
 }
 /* @media only screen and (max-width: 600px) {
     #chuckTitle {
@@ -157,6 +160,13 @@ footer {
     80% { transform: translate(10px, 0px) rotate(0deg); }
     90% { transform: translate(-5px, 0px) rotate(0deg); }
     100% { transform: translate(0px, 0px) rotate(0deg); }
+  }
+  @keyframes spin {
+    0%   {transform: rotate(0deg)}
+    25%  {transform: rotate(90deg)}
+    50%  {transform: rotate(180deg)}
+    75%  {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
   }
 #chuckFigure {
     display: block;
