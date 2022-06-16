@@ -1,19 +1,19 @@
 #begin {
-    background: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/colloseum-on-white-background-vector-22614639.jpeg) no-repeat center center fixed; 
+    background: url(ScreenShots/colloseum-on-white-background-vector-22614639.jpeg) no-repeat center center fixed; 
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
 }
 #end { 
-    background: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/colloseum-on-white-background-vector-22614639.jpeg) no-repeat center center fixed; 
+    background: url(ScreenShots/colloseum-on-white-background-vector-22614639.jpeg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
 #finishHim {
-  background: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/colosseuminteriorthree.png) no-repeat center center fixed; 
+  background: url(ScreenShots/colosseuminteriorthree.png) no-repeat center center fixed; 
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -58,7 +58,7 @@ footer {
     border-radius: 40%;
     border: white;
     max-height: 3rem;
-    cursor: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/brucefist.jpeg), grabbing;
+    cursor: url(ScreenShots/brucefist.jpeg), grabbing;
     /* Animation Below */
         position:fixed;
         animation-name: chuckMoves;
@@ -71,7 +71,7 @@ footer {
     background-color: white;
     border-radius: 20%;
     border: white;
-    cursor: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/brucefistcolor.jpeg), grabbing;
+    cursor: url(ScreenShots/brucefistcolor.jpeg), grabbing;
     display: inline-block;
     bottom: 0;
     margin-left: 8rem;
@@ -90,7 +90,7 @@ footer {
     background-color: white;
     border-radius: 20%;
     border: white;
-    cursor: url(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/norrisfistcolor.jpeg), grabbing;
+    cursor: url(ScreenShots/norrisfistcolor.jpeg), grabbing;
     display: inline-block;
     bottom: 0;
     margin-right: 8rem;
@@ -221,7 +221,7 @@ footer {
 } */
 
 #jokeBox {
-	background-image: URL(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/moviearttwo.jpeg);
+	background-image: URL(ScreenShots/moviearttwo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 	height: 200px;
@@ -237,7 +237,7 @@ footer {
     border-color: rgb(186, 8, 8);
 }
 #Box {
-	background-image: URL(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/moviearttwo.jpeg);
+	background-image: URL(ScreenShots/moviearttwo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 	height: 300px;
@@ -253,7 +253,7 @@ footer {
     border-color: rgb(186, 8, 8);
 }
 #quoteBox {
-	background-image: URL(/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/ScreenShots/moviearttwo.jpeg);
+	background-image: URL(ScreenShots/moviearttwo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 	height: 200px;

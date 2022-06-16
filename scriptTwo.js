@@ -42,7 +42,7 @@ closeButton.onclick = (function outer() {
 
 function newEnemy () {
     let clickCount = localStorage.getItem('count')
-    if (clickCount == 5){
+    if (clickCount == 2){
     location.href ='/Users/makaylaclausen/Desktop/SEI/Projects/chuckNorris/indexThree.html'
     }
 }
