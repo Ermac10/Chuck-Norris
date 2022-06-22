@@ -11,7 +11,7 @@ A simple browser game built to cure boredom and distract the mind for a bit
 # Screenshots
 ![Wireframe](ScreenShots/Wirefram_Chuck.png)
 # Getting Started
-[click here] () to use the Chuck Norris Joke Generator
+[https://superlative-bublanina-7b58ac.netlify.app] () to use the Chuck Norris Joke Generator
 # Future Enhancements
 - Add animation for chuck norris icon that moves around the screen
 - Add animation for user
