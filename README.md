@@ -8,6 +8,8 @@ A simple browser game built to cure boredom and distract the mind for a bit
 - HTML 5
 - CSS3
 - Javascript
+- Google Fonts
+- Chuck Norris API [https://api.chucknorris.io/]
 # Screenshots
 ![Wireframe](ScreenShots/Wirefram_Chuck.png)
 # Getting Started
